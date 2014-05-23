@@ -1,0 +1,54 @@
+.tabelborderall {
+
+	BORDER-RIGHT: 1px solid #285182;
+	BORDER-TOP: 1px solid #285182;
+	BORDER-LEFT: 1px solid #285182;
+	BORDER-BOTTOM: 1px solid #285182;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: bold;
+	color: #ffffff;
+	text-decoration: none;
+}
+.tabelborderall2 {
+
+	BORDER-RIGHT: 1px solid #285182;
+	BORDER-TOP: 1px solid #285182;
+	BORDER-LEFT: 1px solid #285182;
+	BORDER-BOTTOM: 1px solid #285182;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: bold;
+	color: #285182;
+	text-decoration: none;
+}
+
+.tabelbordertop {
+
+	BORDER-RIGHT: 0px solid #285182;
+	BORDER-TOP: 1px solid #285182;
+	BORDER-LEFT: 1px solid #285182;
+	BORDER-BOTTOM: 1px solid #285182;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: bold;
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.tabelborderleft {
+	BORDER-RIGHT: #285182 0px solid;
+	BORDER-TOP: #285182 0px solid;
+	BORDER-LEFT: #285182 1px solid;
+	BORDER-BOTTOM: #285182 1px solid;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: normal;
+	color: #000000;
+	text-decoration: none;
+
+}

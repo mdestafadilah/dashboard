@@ -1,0 +1,59 @@
+.title {
+    FONT-SIZE: 12px;
+	COLOR: #3366ff;
+	font-weight:bold;
+}
+
+.blog {
+    FONT-SIZE: 12px;
+	PADDING-LEFT: 7px
+}
+#container2 {
+    MARGIN: 0px;
+    WIDTH: 240;
+    COLOR: #333;
+    LINE-HEIGHT: 100%;
+    BACKGROUND-COLOR: #ffffff
+}
+
+
+#container {
+    MARGIN: 0px;
+    WIDTH: 640;
+    COLOR: #333;
+    LINE-HEIGHT: 130%;
+    BACKGROUND-COLOR: #ffffff
+}
+
+#content {
+	BORDER-RIGHT: #6699CC 1px solid;
+    PADDING-RIGHT: 1em;
+    PADDING-LEFT: 19em;
+    PADDING-BOTTOM: 0;
+    BORDER-LEFT: #6699CC 1px solid;
+    PADDING-TOP: 1em;
+    WIDTH: 500;
+    BORDER-BOTTOM: #6699CC 1px solid;
+    BACKGROUND-COLOR: #fff
+}
+#navlistKanan {
+	PADDING-RIGHT: 3px; WIDTH: 739; MARGIN-TOP: 1em; PADDING-LEFT: 0px; MARGIN-BOTTOM: 0px; PADDING-BOTTOM: 3px; FONT: bold 12px Verdana, sans-serif; MARGIN-LEFT: 0px; PADDING-TOP: 0px; BORDER-BOTTOM: #6699CC 1px solid; BACKGROUND-COLOR: #ffffff
+}
+#navlistKanan LI {
+	DISPLAY: inline; MARGIN: 0px; LIST-STYLE-TYPE: none
+}
+#navlistKanan LI A {
+	BORDER-RIGHT: #6699CC 1px solid; PADDING-RIGHT: 0.5em; BORDER-TOP: #6699CC 1px solid; PADDING-LEFT: 0.5em; BACKGROUND: #dde; PADDING-BOTTOM: 3px; MARGIN-LEFT: 3px; BORDER-LEFT: #6699CC 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: #6699CC 1px; TEXT-DECORATION: none
+}
+#navlistKanan LI A:link {
+	COLOR: #448
+}
+#navlistKanan LI A:visited {
+	COLOR: #667
+}
+#navlistKanan LI A:hover {
+	BORDER-LEFT-COLOR: #6699CC; BACKGROUND: #6699CC; BORDER-BOTTOM-COLOR: #6699CC; COLOR: #c9c9c9; BORDER-TOP-COLOR: #6699CC; BORDER-RIGHT-COLOR: #6699CC
+}
+#navlistKanan LI A#current {
+	BACKGROUND: white; BORDER-BOTTOM: white 1px solid
+}

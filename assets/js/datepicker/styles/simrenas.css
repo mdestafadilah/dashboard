@@ -1,0 +1,156 @@
+.menuAtas {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: bold;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+a.menuAtas:hover {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: bold;
+	color: #FFFF00;
+	text-decoration: none;
+}
+.currentMenu {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-style: normal;
+	line-height: normal;
+	font-weight: bold;
+	color: #FFFF00;
+	text-decoration: none;
+}
+.textDirektori {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	line-height: normal;
+	font-weight: bold;
+	color: #204364;
+	text-decoration: none;
+}
+
+.textRight{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: normal;
+	font-weight: bold;
+    color: #204364;
+	text-align: right;
+}
+
+.textBanding {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	line-height: 18px;
+	font-weight: bold;
+	color: #204364;
+	text-decoration: none;
+    background-color: "#E2ECF5";
+}
+
+a.textDirektori:hover {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	line-height: normal;
+	font-weight: bold;
+	color: #cc0000;
+	text-decoration: none;
+}
+
+.textDelete {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	line-height: normal;
+	font-weight: bold;
+	color: red;
+	text-decoration: none;
+}
+a.textDelete:hover {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	line-height: normal;
+	font-weight: bold;
+	color: red;
+	text-decoration: underline;
+}
+
+
+.judulMenuKiri {
+
+	font-family: "Trebuchet MS", Verdana, Georgia;
+	font-size: 16px;
+	font-weight: bold;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.linkMenu {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-style: normal;
+	line-height: normal;
+	font-weight: bold;
+	color: #285182;
+	text-decoration: none;
+	background-color: #A8CAE1;
+	height: 24px;
+	width: 171px;
+	padding-top: 4px;
+	padding-right: 4px;
+
+}
+a.linkMenu:hover {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-style: normal;
+	line-height: normal;
+	font-weight: bold;
+	color: #ffff00;
+	text-decoration: none;
+	background-color: #285182;
+	height: 24px;
+	width: 171px;
+	padding-top: 4px;
+	padding-right: 4px;
+
+}
+.textbox {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	height: 25px;
+	border: 1px solid #999999;
+}
+
+.buttonForm {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #FFFFFF;
+	background-color: #6192CD;
+	height: 30px;
+	width: 80px;
+	border: 1px solid #336699;
+}
+
+.Button {
+	border-bottom: 1px outset #000000;
+	border-left: 1px outset #000000;
+    border-right: 1px outset #000000;
+    border-top: 1px outset #000000;
+	height: 30px;
+    background-color: #F2F8FF;
+    font-family: Verdana, Helvetica, Arial, Tahoma;
+    font-size: 13px;
+}
+
+.selectbox {
+	border: 1px solid #999999;
+}

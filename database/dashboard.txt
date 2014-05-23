@@ -1,0 +1,292 @@
+-- phpMyAdmin SQL Dump
+-- version 2.11.9.2
+-- http://www.phpmyadmin.net
+--
+-- Host: localhost
+-- Generation Time: Apr 26, 2014 at 10:38 PM
+-- Server version: 5.0.67
+-- PHP Version: 5.2.6
+
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+
+--
+-- Database: `dashboard`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `indikator`
+--
+
+CREATE TABLE IF NOT EXISTS `indikator` (
+  `Id_indikator` int(25) NOT NULL auto_increment,
+  `Id_Jenis` varchar(25) NOT NULL,
+  `Dari` varchar(25) NOT NULL,
+  `Sampai` varchar(25) NOT NULL,
+  `Warna` varchar(25) NOT NULL,
+  PRIMARY KEY  (`Id_indikator`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=14 ;
+
+--
+-- Dumping data for table `indikator`
+--
+
+INSERT INTO `indikator` (`Id_indikator`, `Id_Jenis`, `Dari`, `Sampai`, `Warna`) VALUES
+(1, '1', '0', '49', '#FF0000'),
+(2, '1', '50', '79', '#FFFF00'),
+(3, '1', '80', '100', '#00FF00'),
+(4, '2', '0', '49', '#FF0000'),
+(5, '2', '50', '79', '#FFFF00'),
+(6, '2', '80', '100', '#00FF00'),
+(7, '5', '0', '49', '#FF0000'),
+(8, '5', '50', '89', '#FFFF00'),
+(9, '5', '90', '100', '#00FF00'),
+(10, '6', '0', '15', '#00FF00'),
+(11, '6', '16', '25', '#FFFF00'),
+(12, '6', '26', '100', '#FF0000');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `item`
+--
+
+CREATE TABLE IF NOT EXISTS `item` (
+  `id_item` int(30) NOT NULL auto_increment,
+  `id_kategori` int(25) NOT NULL,
+  `nama_item` varchar(35) NOT NULL,
+  `value` varchar(25) NOT NULL,
+  PRIMARY KEY  (`id_item`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=37 ;
+
+--
+-- Dumping data for table `item`
+--
+
+INSERT INTO `item` (`id_item`, `id_kategori`, `nama_item`, `value`) VALUES
+(12, 8, 'LABA OPERASIONAL', '1790642917'),
+(13, 9, 'PENDAPATAN LAIN', '41275199'),
+(23, 11, 'BIAYA PEGAWAI', '857009898'),
+(24, 11, 'BIAYA KANTOR', '179893421'),
+(25, 11, 'BIAYA KENDARAAN', '70099765'),
+(26, 11, 'BIAYA LAIN-LAIN', '10996240'),
+(27, 12, 'BIAYA PENYUSUTAN GEDUNG', '30000000'),
+(28, 12, 'BIAYA PENYUSUTAN PERALATAN KANTOR', '9909613'),
+(29, 12, 'BIAYA PENYUSUTAN TRUCK', '183521895'),
+(30, 12, 'BIAYA PENYUSUTAN MOTOR', '143522850'),
+(31, 12, 'BIAYA PENYUSUTAN CHASIS', '97375000'),
+(32, 13, 'BIAYA LAIN', '79299249'),
+(35, 21, 'Turunan diluar', '20000000'),
+(36, 24, 'BIaya pemasaran', '1500000');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `kategori`
+--
+
+CREATE TABLE IF NOT EXISTS `kategori` (
+  `id_kategori` int(15) NOT NULL auto_increment,
+  `nama_kategori` varchar(25) NOT NULL,
+  `jenis_kategori` varchar(25) NOT NULL,
+  PRIMARY KEY  (`id_kategori`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=25 ;
+
+--
+-- Dumping data for table `kategori`
+--
+
+INSERT INTO `kategori` (`id_kategori`, `nama_kategori`, `jenis_kategori`) VALUES
+(8, 'Laba Operasional', 'D'),
+(9, 'Pendapatan Lain', 'D'),
+(24, 'Biaya Usaha', 'D'),
+(11, 'Biaya Umum', 'K'),
+(12, 'Biaya Penyusutan', 'K'),
+(13, 'Biaya Lain', 'K'),
+(21, 'Pendapatan Diluar', 'K');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `kategori_neraca`
+--
+
+CREATE TABLE IF NOT EXISTS `kategori_neraca` (
+  `id_kategori_neraca` int(25) NOT NULL auto_increment,
+  `kategori_neraca` varchar(25) NOT NULL,
+  PRIMARY KEY  (`id_kategori_neraca`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=10 ;
+
+--
+-- Dumping data for table `kategori_neraca`
+--
+
+INSERT INTO `kategori_neraca` (`id_kategori_neraca`, `kategori_neraca`) VALUES
+(1, 'Asset'),
+(2, 'Kewajiban'),
+(6, 'Pengeluaran'),
+(5, 'Pendapatan');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `sub_item`
+--
+
+CREATE TABLE IF NOT EXISTS `sub_item` (
+  `id_item` int(20) NOT NULL auto_increment,
+  `id_sub_level_neraca` int(25) NOT NULL,
+  `nama_neraca` varchar(50) NOT NULL,
+  `value` varchar(25) NOT NULL,
+  PRIMARY KEY  (`id_item`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=70 ;
+
+--
+-- Dumping data for table `sub_item`
+--
+
+INSERT INTO `sub_item` (`id_item`, `id_sub_level_neraca`, `nama_neraca`, `value`) VALUES
+(3, 2, 'KAS RUPIAH', '271465174'),
+(4, 2, 'KAS DOLLAR', '100000000'),
+(5, 2, 'Bank Lippo a/c 528-30-01205-0, Helida Darnis', '1100584369'),
+(6, 2, 'BANK BCA JAKARTA', '17399085'),
+(7, 2, 'BANK BCA BANDUNG', '2741036'),
+(8, 2, 'BANK DOLLAR', '7019600'),
+(9, 2, 'BANK SYARIAH', '262536183'),
+(10, 2, 'BANK SYARIAH DOLLAR', '5345200'),
+(11, 3, 'PIUTANG EXPORT', '633398750'),
+(12, 3, 'PIUTANG IMPORT INK', '356104170'),
+(13, 3, 'PIUTANG IMPORT UMUM', '131049200'),
+(14, 3, 'PIUTANG IMPORT UDARA', '1216919'),
+(15, 3, 'PIUTANG FORWARDING', '67730000'),
+(16, 3, 'PIUTANG PERGUDANGAN', '5952104'),
+(17, 3, 'PIUTANG ANGKUTAN', '12600000'),
+(18, 3, 'PIUTANG KARYAWAN', '0'),
+(19, 3, 'PIUTANG DIREKSI & KOMISAR', '0'),
+(20, 3, 'PIUTANG LAIN-LAIN', '0'),
+(21, 4, 'BIAYA DIBAYAR DIMUKA', '0'),
+(22, 4, 'PAJAK DIBAYAR DIMUKA-PPH ', '0'),
+(23, 4, 'PAJAK DIBAYAR DIMUKA-PPH ', '0'),
+(24, 4, 'PAJAK DIBAYAR DIMUKA-PPN', '0'),
+(25, 4, 'Investasi Jangka Panjang', '13080000'),
+(69, 35, 'hutang forwading', '2000000'),
+(32, 6, 'AKM. PENYUSUTAN GEDUNG', '-242708333'),
+(33, 6, 'AKM. PENYUSUTAN PERALATAN', '-62271060'),
+(34, 6, 'AKM. PENYUSUTAN TRUCK', '-2200389249'),
+(35, 6, 'AKM. PENYUSUTAN MOTOR', '-539332463'),
+(36, 6, 'AKM. PENYUSUTAN CHASIS', '-378770833'),
+(42, 8, 'HUTANG PAJAK - PPH 21', '0'),
+(43, 8, 'HUTANG PAJAK - PPH 25', '0'),
+(44, 8, 'HUTANG PAJAK - PPN', '0'),
+(45, 9, 'HUTANG PADA PIHAK KETIGA', '0'),
+(46, 9, 'HUTANG MOTOR', '6000000'),
+(47, 9, 'HUTANG TRUCK', '0'),
+(48, 9, 'HUTANG BANK', '306419208'),
+(49, 9, 'HUTANG BANK SYARIAH', '0'),
+(50, 10, 'Hutang Pada Pemilik Saham', '18067819'),
+(51, 10, 'Hutang Lain-lain', '4670170'),
+(52, 11, 'Modal Disetor', '0'),
+(53, 12, 'Laba Ditahan', '3525055852'),
+(54, 12, 'Laba Tahun Ini', '1752618867'),
+(68, 34, 'Tanah', '540750000'),
+(67, 32, 'def', '12345');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `sub_kategori_neraca`
+--
+
+CREATE TABLE IF NOT EXISTS `sub_kategori_neraca` (
+  `id_sub_kategori_neraca` int(25) NOT NULL auto_increment,
+  `id_kategori_neraca` int(25) NOT NULL,
+  `nama_sub_kategori_neraca` varchar(25) NOT NULL,
+  PRIMARY KEY  (`id_sub_kategori_neraca`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=17 ;
+
+--
+-- Dumping data for table `sub_kategori_neraca`
+--
+
+INSERT INTO `sub_kategori_neraca` (`id_sub_kategori_neraca`, `id_kategori_neraca`, `nama_sub_kategori_neraca`) VALUES
+(1, 1, 'Asset Lancar'),
+(2, 2, 'Hutang'),
+(3, 1, 'Asset Tetap'),
+(4, 2, 'Modal');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `sub_level_neraca`
+--
+
+CREATE TABLE IF NOT EXISTS `sub_level_neraca` (
+  `id_sub_level_neraca` int(25) NOT NULL auto_increment,
+  `id_sub_kategori_neraca` int(25) NOT NULL,
+  `nama_sub_neraca` varchar(25) NOT NULL,
+  PRIMARY KEY  (`id_sub_level_neraca`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=37 ;
+
+--
+-- Dumping data for table `sub_level_neraca`
+--
+
+INSERT INTO `sub_level_neraca` (`id_sub_level_neraca`, `id_sub_kategori_neraca`, `nama_sub_neraca`) VALUES
+(2, 1, 'Kas dan Setara Kas'),
+(3, 1, 'Piutang'),
+(4, 1, 'Asset Lancar Lain-lain'),
+(36, 2, 'hutang usaha'),
+(6, 3, 'Akumulasi Penyusutan'),
+(35, 2, 'hutang usaha'),
+(8, 2, 'Hutang Pajak'),
+(9, 2, 'Hutang Pihak Ketiga'),
+(10, 2, 'Hutang Lain Lain'),
+(11, 4, 'Modal Disetor'),
+(12, 4, 'Laba ');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `target`
+--
+
+CREATE TABLE IF NOT EXISTS `target` (
+  `Id_target` int(25) NOT NULL auto_increment,
+  `Id_Jenis` varchar(25) NOT NULL,
+  `Value_Target` varchar(25) NOT NULL,
+  PRIMARY KEY  (`Id_target`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=7 ;
+
+--
+-- Dumping data for table `target`
+--
+
+INSERT INTO `target` (`Id_target`, `Id_Jenis`, `Value_Target`) VALUES
+(1, '1', '4625786418'),
+(2, '2', '56157864177'),
+(3, '5', '100000000'),
+(4, '6', '3000000000');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `user`
+--
+
+CREATE TABLE IF NOT EXISTS `user` (
+  `id_user` int(12) NOT NULL auto_increment,
+  `nama` varchar(50) NOT NULL,
+  `username` varchar(15) NOT NULL,
+  `password` varchar(15) NOT NULL,
+  `level` varchar(25) NOT NULL,
+  PRIMARY KEY  (`id_user`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
+
+--
+-- Dumping data for table `user`
+--
+
+INSERT INTO `user` (`id_user`, `nama`, `username`, `password`, `level`) VALUES
+(1, 'Manager (Bpk. Imam Moekardanoe)', 'manager', 'manager', 'manager'),
+(0, 'Admin Staff Keuangan', 'admin', '123', 'admin');

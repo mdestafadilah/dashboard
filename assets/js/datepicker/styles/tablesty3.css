@@ -1,0 +1,182 @@
+.allBorder {
+	BORDER-RIGHT: #285182 1px solid; BORDER-TOP: #285182 1px solid; BORDER-LEFT: #285182 1px solid; BORDER-BOTTOM: #285182 1px solid
+}
+.trBorderLeft {
+	BORDER-TOP: 1px solid #285182; BORDER-LEFT: 1px solid #285182; BORDER-BOTTOM: 1px solid #285182
+}
+.trBorderRight {
+	BORDER-RIGHT: 1px solid #285182;
+	BORDER-TOP: 1px solid #285182;
+	BORDER-BOTTOM: 1px solid #285182;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	color: #000000;
+	text-decoration: none;
+
+}
+
+.tabelborderall {
+
+	BORDER-RIGHT: 1px solid #285182;
+	BORDER-TOP: 1px solid #285182;
+	BORDER-LEFT: 1px solid #285182;
+	BORDER-BOTTOM: 1px solid #285182;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: bold;
+	color: #ffffff;
+	text-decoration: none;
+}
+.tabelborderall2 {
+
+	BORDER-RIGHT: 1px solid #285182;
+	BORDER-TOP: 1px solid #285182;
+	BORDER-LEFT: 1px solid #285182;
+	BORDER-BOTTOM: 1px solid #285182;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: bold;
+	color: #285182;
+	text-decoration: none;
+}
+
+.tabelbordertop {
+
+	BORDER-RIGHT: 0px solid #285182;
+	BORDER-TOP: 1px solid #285182;
+	BORDER-LEFT: 1px solid #285182;
+	BORDER-BOTTOM: 1px solid #285182;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: bold;
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.tabelborderleft {
+	BORDER-RIGHT: #285182 0px solid;
+	BORDER-TOP: #285182 0px solid;
+	BORDER-LEFT: #285182 1px solid;
+	BORDER-BOTTOM: #285182 1px solid;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: normal;
+	color: #000000;
+	text-decoration: none;
+
+}
+.tabelbordermid {
+	BORDER-RIGHT: #285182 0px solid;
+	BORDER-TOP: #285182 0px solid;
+	BORDER-LEFT: #285182 1px solid;
+	BORDER-BOTTOM: #285182 1px solid;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: normal;
+	color: #000000;
+	text-decoration: none;
+}
+.tabelborderright {
+	BORDER-RIGHT: #285182 1px solid;
+	BORDER-TOP: #285182 0px solid;
+	BORDER-LEFT: #285182 1px solid;
+	BORDER-BOTTOM: #285182 1px solid
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: normal;
+	color: #000000;
+	text-decoration: none;
+}
+.tabelborderKanan {
+	BORDER-RIGHT: #285182 1px solid;
+	BORDER-TOP: #285182 0px solid;
+	BORDER-LEFT: #285182 1px solid;
+	BORDER-BOTTOM: #285182 1px solid
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: normal;
+	color: #000000;
+	text-decoration: none;
+}
+
+.tabelborderspec {
+	BORDER-RIGHT: #285182 1px solid; BORDER-TOP: #285182 1px solid; BORDER-LEFT: #285182 1px solid; BORDER-BOTTOM: #285182 1px solid
+}
+.tabelBorderspace {
+	BORDER-RIGHT: #285182 1px solid;
+	BORDER-TOP: #285182 0px solid;
+	BORDER-LEFT: #285182 1px solid;
+	BORDER-BOTTOM: #285182 1px solid;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: normal;
+	color: #000000;
+	text-decoration: none;
+
+}
+.judultabel {
+	font-family: "Trebuchet MS", Verdana, Georgia;
+	font-size: 16px;
+	font-weight: bold;
+	color: #3366CC;
+	text-decoration: none;
+}
+.judulkategoritabel {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	font-style: normal;
+	line-height: normal;
+	font-weight: bold;
+	color: #CC6600;
+	text-decoration: none;
+}
+
+/***** for navigation menu ******/
+#hnav { }
+#hnav a { text-decoration: none; }
+
+#hnav ul
+{
+padding: 0;
+margin: 0;
+list-style-type: none;
+position: relative;
+}
+
+#hnav li { display: inline; }
+
+/*1st level elements*/
+#hnav ul
+{
+border-top: 1px solid #2e609e;
+border-bottom: 1px solid #2e609e;
+#background-color: #2e609e;
+}
+
+#hnav li { margin: 0 0 0px; }
+
+#hnav ul a,
+#hnav ul a:link,
+#hnav ul a:visited
+{
+#background-color: #2e609e;
+#border: 1px solid #2e609e;
+color: white;
+}
+
+#hnav ul a:hover,
+#hnav ul a:focus
+{
+#background-color: #9CD4F7;
+border: 1px solid black;
+color: black;
+}
